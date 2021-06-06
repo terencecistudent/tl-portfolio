@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-reg: "Source Code Pro", monospace;
+  --fw-bold: bold;
+  --m: 0 auto;
+
+  /* Bootstrap Variables */
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  --bg-gradient: linear-gradient(#ffd89b, #19547b);
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-reg);
+  background-color: var(--bg-light);
+}
+
+.styled-hr {
+  margin: var(--m);
+  width: 20%;
+}
+
+.section-heading {
+  margin: var(--m);
+}
+
+.section-background {
+  background: var(--bg-gradient);
+}
+
+.nav-footer-style {
+  background: var(--bs-gray-dark);
+}
+
+.active {
+  color: var(--bg-gradient);
+}
+
+/* Navbar Other Option */
+/* .navbar-brand-style {
+  margin-left: 20px;
+}
+
+.hamburger-nav {
+  margin-right: 10px;
+}
+
+.link-item {
+  margin-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--bs-teal)
+} */
+
+
+/* Navbar */
+.a-links {
+  color: var(--bs-dark);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.a-links:hover {
+  color: var(--bs-gray);
+}
+
+.a-links.active {
+  text-decoration: underline;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 750px;
+}
+
+.nav-item-list {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+    margin-right: 20px;
+    align-self: flex-end;
+  }
+
+  .hamburger:hover {
+    color: var(--bs-gray);
+  }
+
+  .ul-list {
+    display: none;
+    background-color: #e2c897;
+    margin: 0px;
+  }
+
+  .ul-list.show {
+    display: block;
+    background-color: #fdd79b;
+    width: fit-content;
+  }
+
+  .nav-items {
+    display: flex;
+    background-color: #fdd79b;
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* Intro */
+.intro-section {
+  height: 100%;
+  background: var(--bg-gradient);
+}
+
+.bitmoji {
+  border-radius: 50%;
+}
+
+.btn-download {
+  background-color: var(--bs-white);
+}
+
+.btn-download:hover {
+  background-color: var(--bs-gray);
+  color: var(--bs-white);
+}
+
+/* Skills Section */
+li {
+  list-style-type: none;
+}
+
+.lang-icon-styles {
+  font-size: 80px;
+}
+
+.lang-section-style {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tech-headings {
+  font-weight: var(--fw-bold);
+}
+
+/* About Section */
+.me-pic {
+  border-radius: 5px;
+}
+
+/* Portfolio Section */
+.style-card {
+  box-shadow: 0 0 4px 2px var(--bs-dark);
+  margin: var(--m);
+  overflow: hidden;
+}
+
+.card-title {
+  height: 48px;
+}
+
+.proj-images {
+  text-align: -webkit-center;
+  margin-top: 15px;
+}
+
+.card-images {
+  transition: 750ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.card-images:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.btn-proj {
+  background-color: var(--bs-dark);
+  color: var(--bs-white);
+  border: 1px solid var(--bs-white);
+}
+
+.btn-proj:hover {
+  background-color: var(--bs-white);
+  color: var(--bs-dark);
+  border: 1px solid var(--bs-dark);
+}
+
+/* Contact Section */
+.form-style {
+  min-width: 80%;
+}
+
+/* Footer Section */
+.social-icons {
+  color: var(--bs-white);
+}
+
+.social-icons:hover {
+  color: var(--bs-gray);
+  cursor: pointer;
+}
+
+/* Media Queries for cards */
+@media only screen and (max-width: 307px) {
+  .style-card {
+    margin: 0 auto;
+    width: 15rem;
+  }
+
+  .card-text-style {
+    height: 9.5rem;
+  }
+}
+
+@media only screen and (min-width: 308px) {
+  .style-card {
+    margin: 0 auto;
+    width: 18rem;
+  }
+
+  .card-text-style {
+    height: 8.5rem;
+  }
+}
