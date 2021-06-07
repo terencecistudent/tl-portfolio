@@ -110,6 +110,8 @@ To be completed.
     - Stored the code on here.
 - Google Chrome Developer Tools
     - Helped with small changes.
+- formsubmit.io
+    - Helped with sending emails in the contact form.
 
 ## Cloning and Pushing To The Respository
 ### Cloning:
