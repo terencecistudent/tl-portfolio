@@ -53,10 +53,10 @@ You can download it from here: https://code.visualstudio.com/
 
 ## Testing
 ### Manual Testing
-To be completed.
+Manual tests can be found [here](https://github.com/terencecistudent/tl-portfolio/blob/main/docs/manual-tests.pdf)
 
 ### Responsiveness on different devices
-To be completed.
+Responsiveness tests can be found [here](https://github.com/terencecistudent/tl-portfolio/blob/main/docs/responsiveness-different-devices.pdf)
 
 ### Running Responsive Designs on Google Chrome:
 **To view responsive applications:**
