@@ -4,7 +4,7 @@ const navList = document.getElementById('nav-list');
 
 const toggleButton = () => {
     navList.classList.toggle('show');
-}
+};
 
 hamburgerButton.addEventListener('click', toggleButton);
 
@@ -24,5 +24,5 @@ if (history.scrollRestoration) {
 } else {
     window.onbeforeunload = () => {
         window.scrollTo(0, 0);
-    }
+    };
 }
