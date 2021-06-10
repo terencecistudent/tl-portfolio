@@ -248,7 +248,15 @@ li {
 
 /* Contact Section */
 .form-style {
-  min-width: 80%;
+  max-width: 700px;
+}
+
+.form-centered {
+  text-align: -webkit-center;
+}
+
+.labels-left {
+  float: left;
 }
 
 /* Footer Section */
