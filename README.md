@@ -42,7 +42,7 @@ To be completed.
 Access to desktop, laptop, table or mobile devices and internet connection.
 
 ## Deployment
-I have used https://www.hostinger.co.uk to host my website and was able to create a custom domain name.
+I have used GitHub to host my website and was able to create a custom domain name from Google Domains.
 
 Visit the live demo at [Terence Logue's Portfolio](https://terencelogue.com)
 
