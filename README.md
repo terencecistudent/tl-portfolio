@@ -9,34 +9,34 @@ To be completed.
 ## UX
 ### User Stories
 1. As a user, I would like to download the CV by clicking on the Download CV button.
-        - End User Goal: User is able to click on the button and they will receive a download of the CV.
-        - End Business Goal: CV able to be downloaded when button is clicked.
-        - Acceptance Criteria: For the user to be able to download the CV.
-        - Measurement Of Success: CV downloaded when button is clicked.
+     - End User Goal: User is able to click on the button and they will receive a download of the CV.
+     - End Business Goal: CV able to be downloaded when button is clicked.
+     - Acceptance Criteria: For the user to be able to download the CV.
+     - Measurement Of Success: CV downloaded when button is clicked.
 
 2. As a user, I would like to click on any of the social media links which will redirect me to the profiles.
-        - End User Goal: User is able to click on the social media links which directs them to the social profiles.
-        - End Business Goal: User is able to see my social media profiles.
-        - Acceptance Criteria: For the user to be able to see my social media profiles when clicked on.
-        - Measurement Of Success: Social media links have my profile URL connected to them.
+     - End User Goal: User is able to click on the social media links which directs them to the social profiles.
+     - End Business Goal: User is able to see my social media profiles.
+     - Acceptance Criteria: For the user to be able to see my social media profiles when clicked on.
+     - Measurement Of Success: Social media links have my profile URL connected to them.
 
 3. As a user, I would like to click on the navigations which will direct me to that specific section.
-        - End User Goal: User is able to click on the nav links which directs them to that particular section.
-        - End Business Goal: User is able to be directed to the specific nav link clicked on.
-        - Acceptance Criteria: For the nav links to direct the user to that specific section.
-        - Measurement Of Success: Nav links are linked to each section using href="#" (their ID).
+     - End User Goal: User is able to click on the nav links which directs them to that particular section.
+     - End Business Goal: User is able to be directed to the specific nav link clicked on.
+     - Acceptance Criteria: For the nav links to direct the user to that specific section.
+     - Measurement Of Success: Nav links are linked to each section using href="#" (their ID).
 
 4. As a user, I would like to be able to see the live demo or source code of the projects.
-        - End User Goal: User is able to click on the either button which will show the live demo or source code.
-        - End Business Goal: User is able to see the live demo or source code to each particular project.
-        - Acceptance Criteria: Live demo and source code buttons direct user to the correct page.
-        - Measurement Of Success: URL for the live demo and source code are linked into the buttons.
+     - End User Goal: User is able to click on the either button which will show the live demo or source code.
+     - End Business Goal: User is able to see the live demo or source code to each particular project.
+     - Acceptance Criteria: Live demo and source code buttons direct user to the correct page.
+     - Measurement Of Success: URL for the live demo and source code are linked into the buttons.
 
 5. As a user, I would like to get in touch with the developer using the contact form.
-        - End User Goal: User is able to submit data that is required, which then is sent to my email.
-        - End Business Goal: User's data in contact form shown in my email.
-        - Acceptance Criteria: Contact form to work as expected.
-        - Measurement Of Success: I have tested and I received all the field's information, such as email etc.
+     - End User Goal: User is able to submit data that is required, which then is sent to my email.
+     - End Business Goal: User's data in contact form shown in my email.
+     - Acceptance Criteria: Contact form to work as expected.
+     - Measurement Of Success: I have tested and I received all the field's information, such as email etc.
 
 ## Requirements
 Access to desktop, laptop, table or mobile devices and internet connection.
