@@ -4,7 +4,7 @@ I have created a portfolio which showcases about who I am, my skills, my portfol
 There are links to some of my social media accounts if somebody wanted to get in touch.  I have made this website reponsive on laptops, tablets and mobiles.
 
 ## Wireframes
-To be completed.
+I have used Figma to create the wireframes: [Click Here](https://github.com/terencecistudent/tl-portfolio/blob/main/wireframes/myportfolio.pdf)
 
 ## UX
 ### User Stories
