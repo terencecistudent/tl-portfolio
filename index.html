@@ -27,38 +27,45 @@
     <title>Terence Logue's Portfolio</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Option Navbar -->
-    <!-- <nav class="container-fluid navbar nav-footer-style sticky-top navbar-expand-lg navbar-dark py-3">
-        <a class="navbar-brand navbar-brand-style d-none d-sm-none d-md-inline d-lg-inline d-xl-inline" href="#home">
-            Terence Logue
-        </a>
-        <button class="navbar-toggler hamburger-nav" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse myNav" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link link-item" aria-current="page" href="#intro" id="homeId">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-item" href="#technologies" id="technologiesId">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-item" href="#about" id="aboutId">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-item" href="#portfolio" id="portfolioId">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-item" href="#contact" id="contactId">Contact</a>
-                </li>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar nav-footer-style fixed-top navbar-expand-lg navbar-dark py-3" id="navbar-example">
+                <a class="navbar-brand navbar-brand-style d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline"
+                    href="#home">
+                    Terence Logue
+                </a>
+                <button class="navbar-toggler hamburger-nav burger-icon" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse myNav" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0 ul-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link link-item" aria-current="page" href="#intro" id="homeId">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="#technologies" id="technologiesId">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="#portfolio" id="portfolioId">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="#about" id="aboutId">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-item" href="#contact" id="contactId">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav> -->
+    </div>
 
-    <nav class="nav-items fixed-top pt-3">
+
+    <!-- <nav class="nav-items fixed-top pt-3">
         <h4 class="logo">TL- Web Dev</h4>
         <ul id="nav-list" class="ul-list">
             <li class="nav-item-list"><a href="#intro" class="a-links active">Home</a></li>
@@ -70,13 +77,15 @@
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </button>
-    </nav>
+    </nav> -->
+
 
     <!-- Intro -->
-    <header class="container-fluid intro-section px-0 g-0 py-5" id="intro">
+    <header class="intro-section px-0 g-0 py-5 scrollspy-example" id="intro" data-bs-spy="scroll"
+        data-bs-target="#navbar-example2" tabindex="0">
         <div class="text-center pt-5">
             <img src="images/bitmoji-min.png" class="img-fluid bitmoji" alt="Bitmoji">
-            <h1 class="text-uppercases mt-2">
+            <h1 class="text-uppercases mt-2 ml3">
                 <strong>Terence Logue</strong>
             </h1>
             <div class="my-4"><i class="fas fa-laptop-code fa-4x"></i></div>
@@ -88,82 +97,76 @@
             </a>
             <div class="my-3">
                 <a href="https://github.com/terencecistudent" target="_blank"><i
-                        class="fab fa-github fa-3x social-icons"></i></a>
+                        class="fab fa-github fa-3x social-icons-intro"></i></a>
                 <a href="https://www.linkedin.com/in/terencelogue" target="_blank"><i
-                        class="fab fa-linkedin fa-3x social-icons"></i></a>
+                        class="fab fa-linkedin fa-3x social-icons-intro"></i></a>
             </div>
         </div>
     </header>
 
     <!--Skills-->
-    <section class="container my-3 py-5" id="technologies">
-        <div class="row text-center">
-            <div class="col">
-                <h2 class="section-heading pt-3">
+    <section class="py-5 scrollspy-example" id="technologies" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+        tabindex="0">
+        <div class="text-center g-0">
+            <div class="col-12">
+                <h2 class="section-heading pb-3 mt-5">
                     Skills
                     <span><i class="fas fa-code"></i></span>
                 </h2>
                 <hr class="styled-hr">
             </div>
         </div>
-        <div class="row text-center my-3 py-5 px-3">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 lang-section-style">
+        <div class="row text-center my-3 py-2 g-0 content-centered">
+            <div class="col-12 lang-icon-styles">
                 <h4 class="tech-headings">Frontend:</h4>
-                <div class="row">
-                    <div class="col-12 lang-icon-styles">
-                        <span><i class="devicon-html5-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-css3-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-bootstrap-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-javascript-plain colored"></i></span>
-                        <span><i class="devicon-jquery-plain-wordmark colored"></i></span>
-                    </div>
-                </div>
+                <span><i class="devicon-html5-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-css3-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-bootstrap-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-javascript-plain colored devicons-style"></i></span>
+                <span><i class="devicon-jquery-plain-wordmark colored devicons-style"></i></span>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 lang-section-style">
+        </div>
+        <div class="row text-center my-3 py-2 g-0 content-centered">
+            <div class="col lang-icon-styles">
                 <h4 class="tech-headings">Backend:</h4>
-                <div class="row">
-                    <div class="col-12 lang-icon-styles">
-                        <span><i class="devicon-python-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-flask-original-wordmark colored"></i></span>
-                        <span><i class="devicon-django-plain colored"></i></span>
-                        <span><i class="devicon-mysql-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-mongodb-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-amazonwebservices-plain-wordmark colored"></i></span>
-                        <span><i class="fab fa-stripe"></i></span>
-                    </div>
-                </div>
+                <span><i class="devicon-python-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-flask-original-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-django-plain colored devicons-style"></i></span>
+                <span><i class="devicon-mysql-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-mongodb-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-amazonwebservices-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="fab fa-stripe devicons-style"></i></span>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 lang-section-style">
+        </div>
+        <div class="row text-center mt-3 mb-5 py-2 g-0 content-centered">
+            <div class="col-12 lang-icon-styles">
                 <h4 class="tech-headings">Others:</h4>
-                <div class="row">
-                    <div class="col-12 lang-icon-styles">
-                        <span><i class="devicon-git-plain-wordmark colored"></i></span>
-                        <span><i class="devicon-github-original-wordmark colored"></i></span>
-                        <span><i class="devicon-jasmine-plain colored"></i></span>
-                        <span><i class="fab fa-font-awesome"></i></span>
-                    </div>
-                </div>
+                <span><i class="devicon-git-plain-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-github-original-wordmark colored devicons-style"></i></span>
+                <span><i class="devicon-jasmine-plain colored devicons-style"></i></span>
+                <span><i class="fab fa-font-awesome devicons-style"></i></span>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Portfolio -->
-    <section class="container-fluid section-background my-3 py-5" id="portfolio">
-        <div class="row text-center mb-3">
+    <section class="section-background py-5" id="portfolio" style="margin-top: -72px;">
+        <div class="row text-center mb-3 g-0 g-0">
             <div class="col">
-                <h2 class="section-heading pt-3">
+                <h2 class="section-heading pb-3 mt-5">
                     Portfolio
                     <span><i class="far fa-folder"></i></span>
                 </h2>
                 <hr class="styled-hr">
             </div>
         </div>
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3 g-0">
             <div class="col">
                 <h4>Code Institute Projects:</h4>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center g-0">
             <!-- Rockband -->
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 proj-images">
                 <div class="card style-card">
@@ -258,12 +261,12 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-5 g-0">
             <div class="col">
                 <h4>Personal Projects:</h4>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center g-0">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 proj-images">
                 <div class="card style-card">
                     <img src="images/google-maps-proj-min.JPG" class="card-img-top img-fluid card-images"
@@ -293,7 +296,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Peter Lynch Photography</h5>
                         <p class="card-text" style="height: 9.5rem;">
-                            HTML, CSS, Bootstrap, JavaScript, jQuery, Python and Flask used to create a gallery of Peter
+                            HTML, CSS, Bootstrap, JavaScript, jQuery, Python and Flask used to create a gallery of
+                            Peter
                             Lynch's photographs.
                             <br>
                             July 2021
@@ -378,17 +382,17 @@
     </section>
 
     <!-- About Me -->
-    <section class="container-fluid my-3 py-5" id="about">
-        <div class="row text-center mb-3">
+    <section class="py-5" id="about">
+        <div class="row text-center mb-3 g-0">
             <div class="col">
-                <h2 class="section-heading pt-3">
+                <h2 class="section-heading pb-3 mt-5">
                     About Me
                     <span><i class="fas fa-male"></i></span>
                 </h2>
                 <hr class="styled-hr">
             </div>
         </div>
-        <div class="row text-center py-3 mt-3">
+        <div class="row text-center py-3 mb-5 g-0">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <img src="images/me-min.jpg" class="img-fluid my-3 me-pic" alt="Me">
             </div>
@@ -400,7 +404,8 @@
                 <p>
                     I graduated from Code Institute in April 2020 with a
                     Second Class Honours, where I learnt many skills for frontend and backend development.
-                    Here I learnt languages such as JavaScript and Python, as well as frameworks such as Bootstrap and
+                    Here I learnt languages such as JavaScript and Python, as well as frameworks such as Bootstrap
+                    and
                     Django.
                 </p>
                 <p>
@@ -418,31 +423,32 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="container-fluid section-background mt-3 py-5" id="contact">
-        <div class="row form-centered">
+    <section class="section-background py-5" id="contact">
+        <div class="row form-centered g-0">
             <div class="col">
-                <h2 class="text-center pt-3">
+                <h2 class="text-center pb-3 mt-5">
                     Contact Form
                     <span><i class="far fa-envelope"></i></span>
                 </h2>
                 <hr class="styled-hr">
-                <form action="https://formsubmit.co/terencelogue100@gmail.com" method="POST" class="py-5 form-style">
+                <form action="https://formsubmit.co/terencelogue100@gmail.com" method="POST"
+                    class="py-5 mb-5 form-style">
                     <input type="hidden" name="_subject" value="New submission!">
-                    <div class="mb-3 form-style">
+                    <div class="mb-3">
                         <label for="fullName" class="form-label labels-left">Full Name</label>
-                        <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name"
-                            required>
+                        <input type="text" name="name" class="form-control input-styling" id="fullName"
+                            placeholder="Full Name" required>
                     </div>
                     <input type="hidden" name="_next" value="alert('Thank you')">
                     <input type="hidden" name="_next" value="https://terencelogue.com/thankyou.html">
-                    <div class="mb-3 form-style">
+                    <div class="mb-3">
                         <label for="email" class="form-label labels-left">Email Address</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Email Address"
-                            required>
+                        <input type="email" name="email" class="form-control input-styling" id="email"
+                            placeholder="Email Address" required>
                     </div>
-                    <div class="mb-3 form-style">
+                    <div class="mb-3">
                         <label for="message" class="form-label labels-left">Message</label>
-                        <input type="text" name="message" class="form-control" id="message"
+                        <input type="text" name="message" class="form-control input-styling" id="message"
                             placeholder="Place your message here..." required>
                     </div>
                     <div class="text-center">
@@ -454,23 +460,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid py-5 nav-footer-style" id="footer">
-        <div class="row text-center text-white">
+    <footer class="py-5 nav-footer-style" id="footer">
+        <div class="row text-center text-white g-0">
             <div class="col">
                 Email: terencelogue100@gmail.com
             </div>
         </div>
-        <div class="row text-center text-white my-3">
+        <div class="row text-center text-white my-3 g-0">
             <div class="col">
                 <a href="https://www.facebook.com/terence.logue" target="_blank"><i
-                        class="fab fa-facebook fa-2x social-icons"></i></a>
+                        class="fab fa-facebook fa-2x social-icons-footer"></i></a>
                 <a href="https://twitter.com/tl_web_dev?s=09" target="_blank"><i
-                        class="fab fa-twitter fa-2x social-icons"></i></a>
+                        class="fab fa-twitter fa-2x social-icons-footer"></i></a>
                 <a href="https://www.instagram.com/terencelogue/" target="_blank"><i
-                        class="fab fa-instagram fa-2x social-icons"></i></a>
+                        class="fab fa-instagram fa-2x social-icons-footer"></i></a>
             </div>
         </div>
     </footer>
+
+
+    <!-- Text Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -483,6 +493,7 @@
 
     <!-- My Script -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
