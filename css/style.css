@@ -71,7 +71,7 @@ body {
   color: var(--bg-gradient);
 }
 
-/* Navbar Other Option */
+/* Navbar */
 .navbar-brand-style {
   margin-left: 20px;
 }
@@ -105,92 +105,10 @@ body {
   background-color: var(--bs-gray);
 }
 
-/* Navbar */
-/* .a-links {
-  color: var(--bs-dark);
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.a-links:hover {
-  color: var(--bs-gray);
-}
-
-.a-links.active {
-  text-decoration: underline;
-}
-
-.nav-items {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fbd59a;
-}
-
-.ul-list {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  width: 750px;
-}
-
-.nav-item-list {
-  text-decoration: none;
-}
-
-.hamburger {
-  display: none;
-}
-
-.hamburger:focus {
-  outline: 0;
-}
-
-.logo {
-  padding-left: 30px;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    font-size: 30px;
-    margin-right: 20px;
-    align-self: flex-end;
-  }
-
-  .hamburger:hover {
-    color: var(--bs-gray);
-  }
-
-  .ul-list {
-    display: none;
-    background-color: #e2c897;
-    margin: 0px;
-  }
-
-  .ul-list.show {
-    display: block;
-    background-color: #fdd79b;
-    width: fit-content;
-  }
-
-  .nav-items {
-    display: flex;
-    background-color: #fdd79b;
-    flex-direction: column-reverse;
-  }
-
-  .logo {
-    display: none;
-  }
-} */
-
 /* Intro */
 .intro-section {
   height: 100%;
   background: var(--bs-light);
-  /* margin-top: 62px; */
 }
 
 .bitmoji {
@@ -248,6 +166,7 @@ li {
 .devicons-style {
   box-shadow: 0 0 2px 2px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .content-centered {
