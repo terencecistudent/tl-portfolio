@@ -33,8 +33,6 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-
-  --bg-gradient: linear-gradient(#ffd89b, #19547b);
 }
 
 /* General */
@@ -44,10 +42,8 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
   font-family: var(--ff-reg);
   background-color: var(--bg-light);
-  position: relative;
 }
 
 .styled-hr {
@@ -64,11 +60,7 @@ body {
 }
 
 .nav-footer-style {
-  background: var(--bs-gray-dark);
-}
-
-.active {
-  color: var(--bg-gradient);
+  background: var(--bs-gray);
 }
 
 /* Navbar */
@@ -102,7 +94,7 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: var(--bs-gray);
+  background-color: var(--bs-gray-dark);
 }
 
 /* Intro */
@@ -243,7 +235,7 @@ li {
 }
 
 .social-icons-footer:hover {
-  color: var(--bs-gray);
+  color: var(--bs-gray-dark);
   cursor: pointer;
 }
 
