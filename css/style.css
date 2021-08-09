@@ -103,24 +103,19 @@ body {
   background: var(--bs-light);
 }
 
+.intro-h1 {
+  color: var(--bs-gray);
+}
+
 .bitmoji {
   border-radius: 50%;
   box-shadow: 0 0 3px 2px;
+  width: 300px;
   max-width: 90%;
 }
 
 .bitmoji:hover {
   transform: translateY(-10px);
-}
-
-.ml3 {
-  font-weight: 900;
-  font-size: 2em;
-}
-
-.ml4 {
-  font-weight: 900;
-  font-size: 2em;
 }
 
 .btn-download {
@@ -142,27 +137,9 @@ body {
 }
 
 /* Skills Section */
-li {
-  list-style-type: none;
-}
-
 .lang-icon-styles {
-  font-size: 70px;
-  width: 90%;
-}
-
-.tech-headings {
-  font-weight: var(--fw-bold);
-}
-
-.devicons-style {
-  box-shadow: 0 0 2px 2px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.content-centered {
-  place-content: center;
+  font-size: 80px;
+  color: var(--bs-gray-dark);
 }
 
 /* About Section */
@@ -171,28 +148,18 @@ li {
 }
 
 /* Portfolio Section */
-.style-card {
-  box-shadow: 0 0 4px 2px var(--bs-dark);
-  margin: var(--m);
-  overflow: hidden;
-}
-
-.card-title {
-  height: 48px;
-}
-
 .proj-images {
   text-align: -webkit-center;
-  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.card-images {
-  transition: 750ms cubic-bezier(0.5, 0, 0.5, 1);
+.image-pic {
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px var(--bs-gray);
 }
 
-.card-images:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
+.image-pic:hover {
+  opacity: 0.6;
 }
 
 .btn-proj {
@@ -202,9 +169,9 @@ li {
 }
 
 .btn-proj:hover {
-  background-color: var(--bs-white);
-  color: var(--bs-dark);
-  border: 1px solid var(--bs-dark);
+  background-color: var(--bs-gray);
+  color: var(--bs-light);
+  border: 1px solid var(--bs-gray);
 }
 
 /* Contact Section */
@@ -239,25 +206,17 @@ li {
   cursor: pointer;
 }
 
-/* Media Queries for cards */
-@media only screen and (max-width: 307px) {
-  .style-card {
-    margin: 0 auto;
-    width: 15rem;
-  }
-
-  .card-text-style {
-    height: 9.5rem;
-  }
+/* Scroll to top button */
+#scrollToTopBtn {
+  position: fixed;
+  top: 90vh;
+  right: 1vw;
+  border: none;
+  border-radius: 50%;
+  color: var(--bs-dark);
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 308px) {
-  .style-card {
-    margin: 0 auto;
-    width: 18rem;
-  }
-
-  .card-text-style {
-    height: 10rem;
-  }
+#scrollToTopBtn:hover {
+  color: var(--bs-gray-dark);
 }
