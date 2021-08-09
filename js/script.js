@@ -17,6 +17,9 @@ if (history.scrollRestoration) {
   };
 }
 
+// Removes characters after url hash when reloaded
+history.pushState("", document.title, window.location.pathname);
+
 // Scroll to top button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 let rootElement = document.documentElement;
