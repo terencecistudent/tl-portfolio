@@ -25,9 +25,8 @@
 </head>
 
 <body>
-    <!-- Option Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light nav-footer-style" id="navbar-example">
+        <nav class="navbar navbar-expand-lg navbar-light nav-footer-style fixed-top" id="navbar-example">
             <a class="navbar-brand navbar-brand-style d-none d-sm-inline d-md-inline d-lg-inline d-xl-inline text-white"
                 href="#home">
                 Terence Logue
@@ -60,14 +59,14 @@
     </header>
 
     <!-- Intro -->
-    <div class="intro-section py-5">
-        <div class="text-center">
+    <div class="intro-section py-5" id="intro">
+        <div class="text-center section-margins">
             <img src="images/bitmoji-min.png" class="img-fluid bitmoji" alt="Bitmoji">
             <h1 class="text-uppercases py-3">
                 Hi, I am <span class="intro-h1">Terence Logue</span>.
             </h1>
             <h6>
-                Aspiring Junior Full Stack Developer (Javascript, Python)
+                Aspiring Full Stack Developer (Javascript, Python)
             </h6>
             <a href="docs/TerenceLogueCV.pdf" type="button" class="py-3" download="">
                 <button class="btn btn-download">Download CV</button>
@@ -83,7 +82,7 @@
 
     <!-- Skills -->
     <section class="py-5" id="skills">
-        <div class="container">
+        <div class="container section-margins">
             <div class="text-center g-0">
                 <div class="col-12">
                     <h2 class="section-heading">
@@ -167,337 +166,379 @@
 
     <!-- Portfolio -->
     <section class="section-background py-5" id="portfolio">
-        <div class="row text-center g-0 g-0">
-            <div class="col">
-                <h2 class="section-heading">
-                    Portfolio
-                    <span><i class="far fa-folder"></i></span>
-                </h2>
-                <hr class="styled-hr">
-            </div>
-        </div>
-        <div class="row text-center mt-3 g-0">
-            <div class="col">
-                <h4 class="py-3">Code Institute Projects:</h4>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row text-center g-0">
-                <!-- Rockband -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <img src="images/Monkees-min.JPG" class="card-img-top img-fluid image-pic" alt="The Monkees">
-                    </div>
-
-                    <div class="modal" tabindex="-1" id="staticBackdrop">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">The Monkees</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4</p>
-                                    <p><strong>Description:</strong> A responsive website created to showcase the
-                                        rockband The Monkees.
-                                    </p>
-                                    <p><small class="text-muted">June 2019</small></p>
-
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://terencecistudent.github.io/rockband-project/" class="btn btn-proj"
-                                        target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/rockband-project" class="btn btn-proj"
-                                        target="_blank">
-                                        Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Matching Cards Game -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#matchingGameModal">
-                        <img src="images/matching-cards-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="Matching Card Game">
-                    </div>
-
-                    <div class="modal" tabindex="-1" id="matchingGameModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Animal Matching Cards</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies used:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery
-                                        v3.4
-                                    </p>
-                                    <p><strong>Description:</strong> A responsive matching card game which includes 6
-                                        pairs of cards and countdown
-                                        timer.</p>
-                                    <p><small class="text-muted">November 2019</small></p>
-
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://terencecistudent.github.io/matching-cards-project/"
-                                        class="btn btn-proj" target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/matching-cards-project"
-                                        class="btn btn-proj" target="_blank">
-                                        Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Matching Cards Game -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#animalAdventuresModal">
-                        <img src="images/animal-adventures-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="Animal Adventures">
-                    </div>
-
-                    <div class="modal" tabindex="-1" id="animalAdventuresModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Animal Adventures</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
-                                        Flask, MongoDB</p>
-                                    <p><strong>Description:</strong> A responsive website where users can Create, Read,
-                                        Update and Delete (CRUD) information about animals.
-                                    </p>
-                                    <p><small class="text-muted">March 2020</small></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://data-centric-dev-proj-tl.herokuapp.com/" class="btn btn-proj"
-                                        target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/Data-Centric-Dev-Project-TL"
-                                        class="btn btn-proj" target="_blank">
-                                        Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Teds Books Online -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#tedBooksModal">
-                        <img src="images/ted-books-online-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="Teds Books Online">
-                    </div>
-
-                    <div class="modal" tabindex="-1" id="tedBooksModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Teds Books Online</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
-                                        Python 3, Django v1, Stripe, Heroku Postgres</p>
-                                    <p><strong>Description:</strong> A responsive e-commerce website where users can
-                                        make purchases and write in a forum when they are registered.
-                                    </p>
-                                    <p><small class="text-muted">April 2020</small></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://teds-books-online.herokuapp.com/" class="btn btn-proj"
-                                        target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/teds-books-online" class="btn btn-proj"
-                                        target="_blank">
-                                        Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="section-margins">
+            <div class="row text-center g-0 g-0">
+                <div class="col">
+                    <h2 class="section-heading">
+                        Portfolio
+                        <span><i class="far fa-folder"></i></span>
+                    </h2>
+                    <hr class="styled-hr">
                 </div>
             </div>
-        </div>
-        <div class="row text-center mt-5 g-0">
-            <div class="col">
-                <h4 class="py-3">Personal Projects:</h4>
+            <div class="row text-center mt-3 g-0">
+                <div class="col">
+                    <h4 class="py-3">Code Institute Projects:</h4>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row text-center g-0">
-                <!-- John Smith Example Portfolio -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#johnSmithModal" id="monkees-card">
-                        <img src="images/materialize-css-port-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="The Monkees">
+            <div class="container">
+                <div class="row text-center g-0">
+                    <!-- Rockband -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <img src="images/Monkees-min.JPG" class="card-img-top img-fluid image-pic" alt="The Monkees">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="staticBackdrop">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">The Monkees</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4</p>
+                                        <p><strong>Description:</strong> A responsive website created to showcase the
+                                            rockband The Monkees.
+                                        </p>
+                                        <p><small class="text-muted">June 2019</small></p>
+
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://terencecistudent.github.io/rockband-project/" class="btn btn-proj"
+                                            target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/rockband-project" class="btn btn-proj"
+                                            target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="modal" tabindex="-1" id="johnSmithModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">John Smith Sample Portfolio</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                    <!-- Matching Cards Game -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#matchingGameModal">
+                            <img src="images/matching-cards-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Matching Card Game">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="matchingGameModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Animal Matching Cards</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies used:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery
+                                            v3.4
+                                        </p>
+                                        <p><strong>Description:</strong> A responsive matching card game which includes 6
+                                            pairs of cards and countdown
+                                            timer.</p>
+                                        <p><small class="text-muted">November 2019</small></p>
+
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://terencecistudent.github.io/matching-cards-project/"
+                                            class="btn btn-proj" target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/matching-cards-project"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, MaterializeCSS v1.0.0, JavaScript,
-                                        jQuery
-                                    </p>
-                                    <p><strong>Description:</strong> A responsive sample portfolio built to showcase my
-                                        skills of the Materialize CSS framework.
-                                    </p>
-                                    <p><small class="text-muted">August 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Matching Cards Game -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#animalAdventuresModal">
+                            <img src="images/animal-adventures-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Animal Adventures">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="animalAdventuresModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Animal Adventures</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
+                                            Flask, MongoDB</p>
+                                        <p><strong>Description:</strong> A responsive website where users can Create, Read,
+                                            Update and Delete (CRUD) information about animals.
+                                        </p>
+                                        <p><small class="text-muted">March 2020</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://data-centric-dev-proj-tl.herokuapp.com/" class="btn btn-proj"
+                                            target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/Data-Centric-Dev-Project-TL"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://terencecistudent.github.io/materialize-css-portfolio-example/"
-                                        class="btn btn-proj" target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/materialize-css-portfolio-example"
-                                        class="btn btn-proj" target="_blank">
-                                        Source Code
-                                    </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teds Books Online -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#tedBooksModal">
+                            <img src="images/ted-books-online-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Teds Books Online">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="tedBooksModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Teds Books Online</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
+                                            Python 3, Django v1, Stripe, Heroku Postgres</p>
+                                        <p><strong>Description:</strong> A responsive e-commerce website where users can
+                                            make purchases and write in a forum when they are registered.
+                                        </p>
+                                        <p><small class="text-muted">April 2020</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://teds-books-online.herokuapp.com/" class="btn btn-proj"
+                                            target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/teds-books-online" class="btn btn-proj"
+                                            target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row text-center mt-5 g-0">
+                <div class="col">
+                    <h4 class="py-3">Personal Projects:</h4>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center g-0">
+                    <!-- Dunder Mifflin Paper Co. -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#dunderMifflinModal" id="monkees-card">
+                            <img src="images/dundermifflin-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Dunder Mifflin Paper Co.">
+                        </div>
 
-                <!-- Google Maps - My Life Locations -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#googleMapsModal">
-                        <img src="images/google-maps-api-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="Matching Card Game">
-                    </div>
-
-                    <div class="modal" tabindex="-1" id="googleMapsModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Google Maps - My Life Locations</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Google Maps API</p>
-                                    <p><strong>Description:</strong> A responsive website that showcases my skills for
-                                        using the Google Maps API.
-                                    </p>
-                                    <p><small class="text-muted">July 2021</small></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://terencecistudent.github.io/Google-Maps-My-Life/"
-                                        class="btn btn-proj" target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/Google-Maps-My-Life"
-                                        class="btn btn-proj" target="_blank">
-                                        Source Code
-                                    </a>
+                        <div class="modal" tabindex="-1" id="dunderMifflinModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Dunder Mifflin - Information</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v5, Python3, Flask v2.0
+                                        </p>
+                                        <p><strong>Description:</strong> 
+                                            A responsive website created to show my use of the Flask framework.  
+                                            Includes routing and Jinja templates.
+                                        </p>
+                                        <p><small class="text-muted">September 2021</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://dundermifflin-information.herokuapp.com/"
+                                            class="btn btn-proj" target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/the-office-dunder-mifflin"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Peter Lynch Photography -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#peterPhotosModal">
-                        <img src="images/peter-photos-min.JPG" class="card-img-top img-fluid image-pic"
-                            alt="Animal Adventures">
-                    </div>
+                    <!-- John Smith Example Portfolio -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#johnSmithModal" id="monkees-card">
+                            <img src="images/materialize-css-port-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="John Smith Example Portfolio">
+                        </div>
 
-                    <div class="modal" tabindex="-1" id="peterPhotosModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Peter Lynch Photography</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
-                                        Python 3, Flask v1.1.2</p>
-                                    <p><strong>Description:</strong> A responsive photo gallery website created for a
-                                        close friend that showcases his photographs.
-                                    </p>
-                                    <p><small class="text-muted">July 2021</small></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://www.peterlynch-photography.com/" class="btn btn-proj"
-                                        target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/peters-portfolio" class="btn btn-proj"
-                                        target="_blank">
-                                        Source Code
-                                    </a>
+                        <div class="modal" tabindex="-1" id="johnSmithModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">John Smith Sample Portfolio</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, MaterializeCSS v1.0.0, JavaScript,
+                                            jQuery
+                                        </p>
+                                        <p><strong>Description:</strong> A responsive sample portfolio built to showcase my
+                                            skills of the Materialize CSS framework.
+                                        </p>
+                                        <p><small class="text-muted">August 2021</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://terencecistudent.github.io/materialize-css-portfolio-example/"
+                                            class="btn btn-proj" target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/materialize-css-portfolio-example"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Weight Converter -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
-                    <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
-                        data-bs-target="#weightConverterModal">
-                        <img src="images/weight-converter-min (1).JPG" class="card-img-top img-fluid image-pic"
-                            alt="Teds Books Online">
+                    <!-- Google Maps - My Life Locations -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#googleMapsModal">
+                            <img src="images/google-maps-api-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Google Maps - My Locations">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="googleMapsModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Google Maps - My Life Locations</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Google Maps API</p>
+                                        <p><strong>Description:</strong> A responsive website that showcases my skills for
+                                            using the Google Maps API.
+                                        </p>
+                                        <p><small class="text-muted">July 2021</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://terencecistudent.github.io/Google-Maps-My-Life/"
+                                            class="btn btn-proj" target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/Google-Maps-My-Life"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="modal" tabindex="-1" id="weightConverterModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Weight Converter</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                    <!-- Peter Lynch Photography -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#peterPhotosModal">
+                            <img src="images/peter-photos-min.JPG" class="card-img-top img-fluid image-pic"
+                                alt="Peter Lynch Photograpy">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="peterPhotosModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Peter Lynch Photography</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript, jQuery,
+                                            Python 3, Flask v1.1.2</p>
+                                        <p><strong>Description:</strong> A responsive photo gallery website created for a
+                                            close friend that showcases his photographs.
+                                        </p>
+                                        <p><small class="text-muted">July 2021</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://www.peterlynch-photography.com/" class="btn btn-proj"
+                                            target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/peters-portfolio" class="btn btn-proj"
+                                            target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript</p>
-                                    <p><strong>Description:</strong> A responsive weight converter website where users
-                                        can enter an amount in Pounds (lbs) which is converted into Grams, Kilograms,
-                                        Ounces and Stone.
-                                    </p>
-                                    <p><small class="text-muted">July 2021</small></p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <a href="https://terencecistudent.github.io/weight-converter-app/"
-                                        class="btn btn-proj" target="_blank">
-                                        Live Demo
-                                    </a>
-                                    <a href="https://github.com/terencecistudent/weight-converter-app"
-                                        class="btn btn-proj" target="_blank">
-                                        Source Code
-                                    </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weight Converter -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 proj-images">
+                        <div class="card style-card" style="width: 90%;" style data-bs-toggle="modal"
+                            data-bs-target="#weightConverterModal">
+                            <img src="images/weight-converter-min (1).JPG" class="card-img-top img-fluid image-pic"
+                                alt="Weight Converter">
+                        </div>
+
+                        <div class="modal" tabindex="-1" id="weightConverterModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Weight Converter</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Technologies:</strong> HTML5, CSS3, Bootstrap v4, JavaScript</p>
+                                        <p><strong>Description:</strong> A responsive weight converter website where users
+                                            can enter an amount in Pounds (lbs) which is converted into Grams, Kilograms,
+                                            Ounces and Stone.
+                                        </p>
+                                        <p><small class="text-muted">July 2021</small></p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <a href="https://terencecistudent.github.io/weight-converter-app/"
+                                            class="btn btn-proj" target="_blank">
+                                            Live Demo
+                                        </a>
+                                        <a href="https://github.com/terencecistudent/weight-converter-app"
+                                            class="btn btn-proj" target="_blank">
+                                            Source Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -509,7 +550,7 @@
 
     <!-- About Me -->
     <section class="py-5" id="about">
-        <div class="container">
+        <div class="container section-margins">
             <div class="row text-center g-0">
                 <div class="col">
                     <h2 class="section-heading">
@@ -524,10 +565,6 @@
                     <img src="images/me-min.jpg" class="img-fluid my-3 me-pic" alt="Me">
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                    <p>
-                        I am currently studying React JS and after that, I am planning
-                        on expanding my knowledge of backend technologies by learning NodeJS.
-                    </p>
                     <p>
                         I graduated from Code Institute in April 2020 with a
                         Second Class Honours, where I learnt many skills for frontend and backend development.
@@ -552,7 +589,7 @@
 
     <!-- Contact Form -->
     <section class="section-background py-5" id="contact">
-        <div class="row form-centered g-0">
+        <div class="row form-centered g-0 section-margins">
             <div class="col">
                 <h2 class="text-center">
                     Contact Form

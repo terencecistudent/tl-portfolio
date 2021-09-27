@@ -63,6 +63,11 @@ body {
   background: var(--bs-gray);
 }
 
+.section-margins {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
 /* Navbar */
 .navbar-brand-style {
   margin-left: 20px;
@@ -209,7 +214,7 @@ body {
 /* Scroll to top button */
 #scrollToTopBtn {
   position: fixed;
-  top: 90vh;
+  top: 85vh;
   right: 1vw;
   border: none;
   border-radius: 50%;
