@@ -117,10 +117,11 @@ body {
   box-shadow: 0 0 3px 2px;
   width: 300px;
   max-width: 90%;
+  transition: .5s ease;
 }
 
 .bitmoji:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .btn-download {
@@ -161,10 +162,11 @@ body {
 .image-pic {
   cursor: pointer;
   box-shadow: 0 0 2px 2px var(--bs-gray);
+  transition: 0.2s ease;
 }
 
 .image-pic:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .btn-proj {
