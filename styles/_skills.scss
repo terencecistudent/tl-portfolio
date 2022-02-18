@@ -1,0 +1,40 @@
+.skills {
+  background-color: $very-light-blue;
+}
+
+.skills-container {
+  padding: 30px;
+
+  .icon-container {
+    width: 6.375rem;
+    height: 6.375rem;
+    text-decoration: none;
+    color: $black;
+
+    img {
+      width: 60px;
+      height: 60px;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+
+    p {
+      text-transform: capitalize;
+      margin-top: 20px;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}
+
+.skillsets {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
