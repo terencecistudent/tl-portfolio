@@ -1,11 +1,3 @@
-// Navbar Active
-let selector = ".a-links";
-
-$(selector).on("click", function () {
-  $(selector).removeClass("active");
-  $(this).addClass("active");
-});
-
 // Start page at the top when reloaded
 history.scrollRestoration = "manual";
 
@@ -20,8 +12,23 @@ if (history.scrollRestoration) {
 // Removes characters after url hash when reloaded
 history.pushState("", document.title, window.location.pathname);
 
-// Scroll to top button
-let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Scroll nav transition
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  let navbar = document.querySelector(".navbar")
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+    navbar.classList.add("scroll-transition__smooth");
+  } else {
+    navbar.style.top = "-73.60px";
+    navbar.classList.add("scroll-transition__smooth");
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+// Scroll to top button functionality
+let scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 let rootElement = document.documentElement;
 
 const scrollToTop = () => {

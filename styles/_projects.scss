@@ -1,0 +1,43 @@
+.projects {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+
+.projects-container {
+  border-radius: 5px;
+  padding: 40px;
+  // background-color: rgba(86, 173, 244, 0.03);
+  background-color: rgba(86, 173, 244, 0.1);
+  letter-spacing: 1px;
+
+  &__inner {
+    padding: 20px;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+}
+
+.images-hover {
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .demo-btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  .demo-btn {
+    margin-top: 5px;
+  }
+}
