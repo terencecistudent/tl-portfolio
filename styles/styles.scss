@@ -1,0 +1,53 @@
+@import "navbar";
+@import "hero";
+@import "skills";
+@import "projects";
+@import "about";
+@import "contact";
+@import "footer";
+
+@import "utilities";
+@import "colors";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: $white;
+  color: $black;
+}
+
+.scroll-transition__smooth {
+  transition: ease 0.3s;
+}
+
+.btn {
+  background-color: #52aaf1;
+  color: $white;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #52a9f1bb;
+    color: $white;
+  }
+}
+
+/* Scroll to top button */
+.scrollToTopBtn {
+  position: fixed;
+  top: 90vh;
+  right: 1vw;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.637);
+  }
+}

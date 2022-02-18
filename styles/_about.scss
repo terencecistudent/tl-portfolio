@@ -1,0 +1,24 @@
+.about {
+  background-color: $very-light-blue;
+}
+
+.content-row {
+  line-height: 1.8;
+}
+
+p.cv-text {
+  font-size: 18px;
+  color: #2020b3;
+}
+
+.download-icon {
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .about-text {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+}

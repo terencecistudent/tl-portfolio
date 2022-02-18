@@ -1,0 +1,57 @@
+.hero {
+  height: 100vh;
+  position: relative;
+
+  background-image: url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .hero-content {
+    align-self: center;
+
+    .hero-text__bg {
+      background-color: rgba(80, 168, 241, 0.48);
+      padding: 1rem;
+      color: $white;
+    }
+
+    @media screen and (max-width: 285px) {
+      margin-top: 1.4rem;
+    }
+  }
+
+  .bitmoji-icon {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 60%;
+      opacity: 0.9;
+      border-radius: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .container {
+      justify-content: center;
+    }
+  }
+}
