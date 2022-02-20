@@ -142,7 +142,8 @@ To contact GitHub, follow this link: https://support.github.com/
 ### Media
 - Bitmoji picture is from https://www.bitmoji.com/
 - Icons beside the heading are from https://fontawesome.com/
-- Skills section icons are from https://devicon.dev/
+- Skills section icons are from https://iconscout.com/
+- Projects devices images were created using https://deviceframes.com/
 
 ### JavaScript Scroll Section
 - I searched this code on https://stackoverflow.com/questions/3664381/force-page-scroll-position-to-top-at-page-refresh-in-html
