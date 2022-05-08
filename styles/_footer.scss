@@ -1,3 +1,17 @@
 .footer {
-    background-color: $very-light-blue;
+  background-color: $navy;
+
+  div {
+    p {
+      color: $white;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+          color: #c0c0c0;
+      }
+    }
+  }
 }

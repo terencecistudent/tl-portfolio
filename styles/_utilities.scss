@@ -1,3 +1,10 @@
+@import "colors";
+
 $margin-twenty: 20px;
 
 $personal-projects: #e3e3e3;
+
+.btn-navy {
+  background-color: $navy;
+  color: $white;
+}

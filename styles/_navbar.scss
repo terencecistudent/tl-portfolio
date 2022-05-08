@@ -2,9 +2,7 @@
 @import "colors";
 
 .navbar {
-  background-color: #52aaf1;
-  box-shadow: 0 0 4px 1px #e3e3e3;
-  // height: 4.6rem;
+  background-color: $navy;
 
   .navbar-brand {
     margin-left: $margin-twenty;
@@ -19,6 +17,7 @@
   }
   .navbar-toggler {
     margin-right: $margin-twenty;
+    background-color: #c0c0c0;
   }
 
   .navbar-nav .nav-link {
@@ -49,6 +48,3 @@ a.email-nav__link {
   }
 }
 
-div #navbarSupportedContent {
-  background-color: #52aaf1;
-}

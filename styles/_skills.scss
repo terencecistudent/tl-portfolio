@@ -1,13 +1,25 @@
+@import "media-queries";
+
 .skills {
   background-color: $very-light-blue;
 }
 
+@include mobile {
+  .skills-container {
+    padding: 0;
+  }
+}
+
 .skills-container {
-  padding: 30px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 0px $navy;
 
   .icon-container {
-    width: 6.375rem;
-    height: 6.375rem;
+    width: 5.5rem;
+    height: 6rem;
     text-decoration: none;
     color: $black;
 
@@ -24,7 +36,9 @@
     p {
       text-transform: capitalize;
       margin-top: 20px;
+      color: $navy;
       transition: 0.3s ease-in-out;
+      font-size: 0.8rem;
 
       &:hover {
         color: rgba(0, 0, 0, 0.6);
