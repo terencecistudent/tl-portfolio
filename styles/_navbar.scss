@@ -1,5 +1,6 @@
 @import "utilities";
 @import "colors";
+@import "media-queries";
 
 .navbar {
   background-color: $navy;
@@ -48,3 +49,8 @@ a.email-nav__link {
   }
 }
 
+@include tablet {
+  .toggler-lg {
+    display: none;
+  }
+}

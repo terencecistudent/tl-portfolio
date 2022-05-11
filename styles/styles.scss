@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: "Roboto Flex", sans-serif;
   background-color: $white;

@@ -51,6 +51,12 @@ a.email-nav__link:hover {
   color: #368ed5;
 }
 
+@media screen and (max-width: 768px) {
+  .toggler-lg {
+    display: none;
+  }
+}
+
 .hero {
   height: 100vh;
   position: relative;
@@ -304,6 +310,10 @@ p.cv-text {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
 body {
