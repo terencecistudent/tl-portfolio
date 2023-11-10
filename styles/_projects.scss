@@ -1,24 +1,16 @@
 @import "media-queries";
+@import "colors";
 
-.projects {
-  background-color: rgba(255, 255, 255, 0.082);
+#projects {
+  background-color: $navy;
 }
 
 h2 {
   font-weight: 700;
 }
 
-.projects-container {
-  border-radius: 5px;
-  padding: 40px;
-  background-color: $navy;
-  letter-spacing: 1px;
-
-  &__inner {
-    padding: 20px;
-    background-color: $very-light-blue;
-    line-height: 1.6;
-  }
+.modal-content {
+  background-color: $very-light-blue;
 }
 
 .images-hover {
@@ -27,6 +19,18 @@ h2 {
   &:hover {
     transform: scale(1.1);
   }
+}
+
+.btn-project-detail {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+.btn-project-detail:hover {
+  background-color: #ffffff;
+  color: $navy;
 }
 
 @include mobile {
